@@ -1,0 +1,22 @@
+<div class="container" ng-controller="MainController">
+
+<form role="form" ng-submit="login()">
+  <div class="form-group">
+    <label for="user">User:</label>
+    <input type="text" class="form-control" id="user" ng-model="paramsUser.user">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" ng-model="paramsUser.pwd">
+  </div>
+ 
+  <button type="submit" class="btn btn-default">Log In</button>
+</form>
+
+<br>
+<br>
+<br>
+
+{{ tokenGuardado }}
+
+</div>
